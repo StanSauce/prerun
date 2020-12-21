@@ -13,20 +13,17 @@ echo 'Running tapestry executable'
 osascript <<-EOF 
 
 
-delay 12
+delay 24
 
 
 tell application "Safari"
 
-    tell window 1
-        set current tab to (make new tab with properties {URL:"https://development.stuartweitzman.com"})
-    end tell
+	close every window
+	#open location "https://development.stuartweitzman.com"
 
-    activate
+	#delay 1
 
-	delay 1
-
-	tell application "System Events" to tell process "Safari"		--	keystroke tab		keystroke "storefront" & tab & "Stuart123" & return	end tellend tell
+	#tell application "System Events" to tell process "Safari"		--	keystroke tab	#	keystroke "storefront" & tab & "Stuart123" & return	#end tellend tell
 EOF
 
 echo 'Complete Execution'
