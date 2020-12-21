@@ -20,7 +20,7 @@ tell application "Safari"
 
 	open location "https://development.stuartweitzman.com"
 
-	delay 1
+	delay 5
 
 	tell application "System Events" to tell process "Safari"		--	keystroke tab		keystroke "storefront" & tab & "Stuart123" & return	end tellend tell
 EOF
