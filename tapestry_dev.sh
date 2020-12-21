@@ -18,8 +18,6 @@ delay 12
 
 tell application "Safari"
 
-	activate
-
 	open location "https://development.stuartweitzman.com"
 
 	delay 1
