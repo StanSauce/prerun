@@ -18,7 +18,11 @@ delay 12
 
 tell application "Safari"
 
-	open location "https://development.stuartweitzman.com"
+    tell window 1
+        set current tab to (make new tab with properties {URL:"https://development.stuartweitzman.com"})
+    end tell
+
+    activate
 
 	delay 1
 
