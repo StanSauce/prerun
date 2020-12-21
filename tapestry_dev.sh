@@ -7,12 +7,12 @@
 
 # This shell script will launch safari, visit a basic-auth reserved site, and log in.
 
-sleep 15
+
 echo 'Running tapestry executable'
 
 osascript <<-EOF 
 
-
+delay 10
 
 tell application "Safari"
 
