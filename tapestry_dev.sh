@@ -12,7 +12,7 @@ echo 'Running tapestry executable'
 
 osascript <<-EOF 
 
-delay 10
+delay 5
 
 tell application "Safari"
 
