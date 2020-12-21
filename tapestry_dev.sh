@@ -12,5 +12,13 @@ echo 'Running tapestry executable'
 
 osascript <<-EOF 
 
-tell application "Safari"	open location "https://development.stuartweitzman.com"	activate		tell application "System Events" to tell process "Safari"		--	keystroke tab		keystroke "storefront" & tab & "Stuart123" & return	end tellend tell
+
+delay 30
+
+
+tell application "Safari"
+	activate
+	tell application "System Events" to tell process "Safari"		--	keystroke tab		keystroke "storefront" & tab & "Stuart123" & return	end tellend tell
 EOF
+
+echo 'Complete Execution'
