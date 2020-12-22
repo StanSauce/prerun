@@ -16,6 +16,7 @@ osascript <<-EOF
 # delay 10
 
 tell application "Safari"
+	activate
 
 	tell application "System Events" to tell process "Safari"	 		keystroke "," using command down
         	set frontmost to true
