@@ -17,16 +17,14 @@ delay 10
 
 tell application "Safari"
 
-	activate
-	tell application "System Events" to tell process "Safari"	
-		-- open a new browser tab		keystroke "t" using command down	end tell
+    tell window 1
+        set current tab to (make new tab with properties {URL:"https://development.stuartweitzman.com"})
+    end tell
 	
-	open location "https://development.stuartweitzman.com"
-
-	delay 2
+    delay 2
 	
-	tell application "System Events" to tell process "Safari"	
-		-- provide credentials, submit		keystroke "storefront" & tab & "Stuart123" & return	end tell
+    tell application "System Events" to tell process "Safari"	
+	-- provide credentials, submit	keystroke "storefront" & tab & "Stuart123" & return    end tell
 	end tell
 EOF
 
