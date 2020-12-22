@@ -42,8 +42,13 @@ tell application "Safari"
             	delay 2
             	click menu item "Allow Remote Automation" of menu 1
             	delay 2
-        	end tell		
-	--	keystroke tab		keystroke "storefront" & tab & "Stuart123" & return	end tellend tell
+        	end tell
+	end tell	
+	open location "https://development.stuartweitzman.com"
+	delay 2
+	tell application "System Events" to tell process "Safari"	
+	--	keystroke tab		keystroke "storefront" & tab & "Stuart123" & return	end tell
+	end tell
 EOF
 
 echo 'Complete Execution'
