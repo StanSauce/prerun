@@ -13,7 +13,7 @@ echo 'Running tapestry executable'
 osascript <<-EOF 
 
 # run after site visited
-# delay 10
+delay 5
 
 tell application "Safari"
 	activate
